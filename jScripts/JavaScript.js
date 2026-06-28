@@ -1,4 +1,4 @@
-﻿// תפריט ניווט
+// תפריט ניווט
 window.addEventListener("load", function () {
     const disabledLinks = document.getElementsByClassName("disabled-link");
     for (let i = 0; i < disabledLinks.length; i++) {
