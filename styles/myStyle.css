@@ -1385,12 +1385,13 @@ p {
 
 .disabled-link {
     color: #4a3b2c;
-    cursor: default;
+    cursor: not-allowed;
 }
 
 .disabled-link:hover,
 .disabled-link:focus {
     color: #4a3b2c;
+    cursor: not-allowed;
     text-decoration: none;
 }
 
