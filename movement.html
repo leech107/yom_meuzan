@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>יום מאוזן | תנועה ואימון</title>
+    <meta name="description" content="עמוד תוכן באתר יום מאוזן העוסק בשילוב תנועה ואימון בשגרת היום-יום." />
+    <meta name="keywords" content="יום מאוזן, הרגלים, שינה, תזונה מאוזנת, תנועה, אורח חיים בריא" />
+    <meta name="author" content="לי צ'סטבן ושני בן-עמי" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="icon" href="images/siteLogo.png" type="image/png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+
+<body class="content-page movement-page">
+<div id="container">
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="מעבר לדף הבית">
+            <span class="logo-text">יום מאוזן</span>
+            <img src="images/siteLogo.png" alt="סמל עלה של יום מאוזן" />
+        </a>
+        <nav class="main-nav" aria-label="ניווט ראשי באתר">
+            <ul class="main-menu">
+                <li><a href="index.html">עמוד הבית</a></li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >שינה <span class="menu-arrow">▽</span></a>                    <ul id="sleepMenu" class="sub-menu">
+                        <li><a href="sleepImportance.html">למה זה חשוב</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">טיפים</a></li>
+                        <li><a href="sleepMyth.html">מיתוסים</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >תזונה מאוזנת <span class="menu-arrow">▽</span></a>
+                    <ul id="nutritionMenu" class="sub-menu">
+                        <li><a class="disabled-link" href="#" onclick="return false;">שגרת תזונה</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">שתיה במהלך היום</a></li>
+                        <li><a href="buildPokeBowl.html">בנו קערה מאוזנת לצהריים</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent active" href="#" >שגרת יום-יום <span class="menu-arrow">▽</span></a>
+                    <ul id="routineMenu" class="sub-menu">
+                        <li><a class="disabled-link" href="#" onclick="return false;">שגרה מאוזנת</a></li>
+                        <li><a href="movement.html">תנועה ואימון</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">ניהול זמן</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">מנוחה ורגיעה</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >אודות ויצירת קשר <span class="menu-arrow">▽</span></a>
+                    <ul id="aboutMenu" class="sub-menu">
+                        <li><a href="about.html">על האתר ועלינו</a></li>
+                        <li><a href="contactUs.html">צרו קשר</a></li>
+                        <li><a href="siteMap.html">מפת אתר</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<nav class="breadcrumbs" aria-label="פירורי לחם"><a href="index.html">עמוד הבית</a> <span aria-hidden="true">&gt;</span> <a href="#">שגרת יום-יום</a> <span aria-hidden="true">&gt;</span> <span>תנועה ואימון</span></nav>
+<main>
+        <section class="movement-hero" aria-labelledby="movement-title">
+            <h1 id="movement-title">תנועה היא המתנה הכי טובה שאפשר לתת לגוף</h1>
+            <img src="images/move/moveHero.png" alt="שלוש דמויות מבצעות מתיחות, אימון כוח וריצה" />
+            <p>לא צריך לרוץ מרתון או לבלות שעות בחדר הכושר כדי ליהנות מהיתרונות של פעילות גופנית. כל תנועה, גם הקטנה ביותר, תורמת לבריאות שלנו: הליכה קצרה, עלייה במדרגות, מתיחות בין משימות או אימון מלא – כולם מסייעים לחיזוק הגוף, לשיפור מצב הרוח ולהעלאת רמות האנרגיה במהלך היום.</p>
+            <p>פעילות גופנית קבועה תורמת לחיזוק השרירים והעצמות, משפרת את סיבולת הלב והריאות, מסייעת להפחתת מתחים ותומכת באורח חיים בריא ומאוזן.</p>
+        </section>
+
+        <section class="page-section" aria-labelledby="training-types-title">
+            <h2 id="training-types-title">שלושה סוגי אימונים שכדאי להכיר</h2>
+            <div class="cards-grid three-cards">
+                <article class="info-card round-card">
+                    <img src="images/move/Aerobic%20training.png" alt="דמות רצה באימון אירובי" />
+                    <h3>אימון אירובי</h3>
+                    <strong>סיבולת ואנרגיה</strong>
+                    <p>פעילויות כמו הליכה מהירה, ריצה, רכיבה על אופניים או ריקוד משפרות את סיבולת הלב והריאות ותורמות לתחושת חיות ואנרגיה.</p>
+                </article>
+                <article class="info-card round-card">
+                    <img src="images/move/Strength%20training.png" alt="דמות מרימה משקולת באימון כוח" />
+                    <h3>אימון כוח</h3>
+                    <strong>חיזוק ובניית שרירים</strong>
+                    <p>אימוני כוח מסייעים לחיזוק השרירים, העצמות והמפרקים, ותומכים ביכולת התפקודית היומיומית לאורך זמן.</p>
+                </article>
+                <article class="info-card round-card">
+                    <!-- תמונה להחלפה: images/movement-pilates.svg | איור פילאטיס -->
+                    <img src="images/move/Pilates.png" alt="דמות בתרגיל פילאטיס" />
+                    <h3>פילאטיס</h3>
+                    <strong>יציבה וחוזק ליבה</strong>
+                    <p>פילאטיס מתמקד בחיזוק שרירי הליבה, שיפור היציבה והגדלת הגמישות, ומתאים לשילוב בשגרה רגועה ומאוזנת.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="movement-tips" aria-labelledby="movement-tips-title">
+            <h2 id="movement-tips-title">אין זמן לאימון? גם תנועה קטנה נחשבת</h2>
+            <p class="section-intro">לא כל יום מאפשר לעצור לאימון מסודר, וזה בסדר. גם פעולות קטנות לאורך היום יכולות להצטבר להשפעה משמעותית על הבריאות.</p>
+            <div class="tips-cloud">
+                <article class="tip-item">
+                    <img src="images/move/staircase.png" alt="דמות עולה במדרגות" />
+                    <h3>העדיפו מדרגות</h3>
+                    <p>עלייה במדרגות היא דרך פשוטה להוסיף יותר תנועה לשגרה.</p>
+                </article>
+                <article class="tip-item">
+                    <img src="images/move/walk.png" alt="דמות בהליכה קצרה" />
+                    <h3>צאו להליכה קצרה</h3>
+                    <p>אפילו 10–15 דקות של הליכה בין משימות יכולות לרענן את הגוף והמחשבה.</p>
+                </article>
+                <article class="tip-item">
+                    <img src="images/move/Talking%20while%20walking.png" alt="דמות מדברת בטלפון תוך כדי הליכה" />
+                    <h3>דברו תוך כדי הליכה</h3>
+                    <p>במקום לשבת בזמן שיחת טלפון, נסו לקום ולהסתובב.</p>
+                </article>
+                <article class="tip-item">
+                    <img src="images/move/Assignments%20for%20movement.png" alt="דמות מבצעת מטלות בבית" />
+                    <h3>הפכו מטלות לתנועה</h3>
+                    <p>סידור הבית, ניקיון וגינון הם גם פעילות גופנית.</p>
+                </article>
+                <article class="tip-item">
+                    <img src="images/move/stretching.png" alt="דמות מבצעת מתיחות ליד מחשב" />
+                    <h3>מתיחות בין משימות</h3>
+                    <p>כמה דקות של מתיחות במהלך היום יכולות להפחית עומס ולשפר את ההרגשה.</p>
+                </article>
+                <article class="tip-item">
+                    <img src="images/move/Song%20and%20dance.png" alt="דמות רוקדת לצלילי מוזיקה" />
+                    <h3>שימו שיר ורקדו</h3>
+                    <p>לפעמים שתי דקות של מוזיקה ותנועה יכולות לעשות פלאים לאנרגיה ולמצב הרוח.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="closing-line" aria-label="מסר מסכם">
+            <p>תנועה לא חייבת להיות מושלמת כדי להיות משמעותית.<br />כל צעד קטן הוא השקעה בבריאות שלכם.</p>
+        </section>
+</main>
+    <footer class="site-footer">
+        <a href="contactUs.html">צרו קשר</a>
+        <span>|</span>
+        <a href="siteMap.html">מפת האתר</a>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>יום מאוזן | בנו קערה מאוזנת</title>
+    <meta name="description" content="עמוד בו ניתן להרכיב קערת פוקי מאוזנת לפי בסיס, חלבון, תוספות ורטבים." />
+    <meta name="keywords" content="יום מאוזן, הרגלים, שינה, תזונה מאוזנת, תנועה, אורח חיים בריא" />
+    <meta name="author" content="לי צ'סטבן ושני בן-עמי" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="icon" href="images/siteLogo.png" type="image/png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+
+<body class="content-page poke-page">
+<div id="container">
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="מעבר לדף הבית">
+            <span class="logo-text">יום מאוזן</span>
+            <img src="images/siteLogo.png" alt="סמל עלה של יום מאוזן" />
+        </a>
+        <nav class="main-nav" aria-label="ניווט ראשי באתר">
+            <ul class="main-menu">
+                <li><a href="index.html">עמוד הבית</a></li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#">שינה <span class="menu-arrow">▽</span></a>                    
+                    <ul id="sleepMenu" class="sub-menu">
+                        <li><a href="sleepImportance.html">למה זה חשוב</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">טיפים</a></li>
+                        <li><a href="sleepMyth.html">מיתוסים</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent active" href="#" >תזונה מאוזנת <span class="menu-arrow">▽</span></a>
+                    <ul id="nutritionMenu" class="sub-menu">
+                        <li><a class="disabled-link" href="#" onclick="return false;">שגרת תזונה</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">שתיה במהלך היום</a></li>
+                        <li><a href="buildPokeBowl.html">בנו קערה מאוזנת לצהריים</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >שגרת יום-יום <span class="menu-arrow">▽</span></a>
+                    <ul id="routineMenu" class="sub-menu">
+                        <li><a class="disabled-link" href="#" onclick="return false;">שגרה מאוזנת</a></li>
+                        <li><a href="movement.html">תנועה ואימון</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">ניהול זמן</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">מנוחה ורגיעה</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >אודות ויצירת קשר <span class="menu-arrow">▽</span></a>
+                    <ul id="aboutMenu" class="sub-menu">
+                        <li><a href="about.html">על האתר ועלינו</a></li>
+                        <li><a href="contactUs.html">צרו קשר</a></li>
+                        <li><a href="siteMap.html">מפת אתר</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<nav class="breadcrumbs" aria-label="פירורי לחם"><a href="index.html">עמוד הבית</a> <span aria-hidden="true">&gt;</span> <a href="#">תזונה מאוזנת</a> <span aria-hidden="true">&gt;</span> <span>בנו קערה מאוזנת לצהריים</span></nav>
+    <main>
+        <section class="page-intro poke-intro" aria-labelledby="poke-title">
+            <h1 id="poke-title">בנו קערה מאוזנת לארוחת צהריים</h1>
+            <p>ארוחת הצהריים מספקת לגוף את האנרגיה הדרושה להמשך הפעילות, הלמידה והריכוז.</p>
+            <p>כאשר הארוחה משלבת מקור לחלבון, פחמימות איכותיות, ירקות מגוונים ושומנים טובים, היא מסייעת לשמור על תחושת שובע לאורך זמן ותורמת לתפקוד מיטבי של הגוף והמוח.</p>
+            <p>לפניכם טופס בו תוכלו לבחור את המרכיבים השונים להרכבת קערת הצהריים שלכם ולקבל מידע אודות הערכים התזונתיים שלה.</p>
+        </section>
+
+        <section class="poke-form-card" aria-labelledby="builder-title">
+            <form id="pokeForm" class="poke-form" action="#" method="get">
+                <div class="bowl-name-area">
+                    <label for="bowlName">איך קוראים לך?</label>
+                    <input id="bowlName" name="bowlName" type="text" oninput="checkConfirmButton()"/>
+                </div>
+                <h2 id="builder-title">בחרו והוסיפו לקערה</h2>
+
+                <div class="builder-top-area">
+                    <div class="builder-options-area">
+                        <fieldset class="poke-fieldset base-fieldset">
+                            <legend>שלב 1 - בסיס</legend>
+                            <div class="option-grid three-options">
+                                <label class="option-card">
+                                    <input id="baseWhiteRice" type="radio" name="base" value="אורז לבן" onclick="chooseBase(0)" />
+                                    <span>
+                                        <strong>אורז לבן</strong>
+                                        <small>150 גרם</small>
+                                        <small>בסיס קלאסי ונעים שמתאים לקערת פוקי קלילה ומשביעה</small>
+                                    </span>
+                                </label>
+
+                                <label class="option-card">
+                                    <input id="baseRedRice" type="radio" name="base" value="אורז אדום" onclick="chooseBase(1)"/>
+                                    <span>
+                                        <strong>אורז אדום</strong>
+                                        <small>150 גרם</small>
+                                        <small>בסיס עשיר יותר שמוסיף צבע, טעם ותחושת שובע</small>
+                                    </span>
+                                </label>
+
+                                <label class="option-card">
+                                    <input id="baseQuinoa" type="radio" name="base" value="קינואה" onclick="chooseBase(2)" />
+                                    <span>
+                                        <strong>קינואה</strong>
+                                        <small>150 גרם</small>
+                                        <small>בסיס קליל ומזין שמתאים לקערה מאוזנת במיוחד</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="poke-fieldset protein-fieldset">
+                            <legend>שלב 2 - חלבון</legend>
+                            <div class="option-grid two-options">
+                                <label class="option-card">
+                                    <input id="proteinSalmon" type="radio" name="protein" value="סלמון" onclick="chooseProtein(0)" disabled="disabled"/>
+                                    <span>
+                                        <strong>סלמון</strong>
+                                        <small>100 גרם</small>
+                                        <small>בחירה עשירה ומשביעה עם טעם דומיננטי</small>
+                                    </span>
+                                </label>
+
+                                <label class="option-card">
+                                    <input id="proteinTuna" type="radio" name="protein" value="טונה" onclick="chooseProtein(1)" disabled="disabled"/>
+                                    <span>
+                                        <strong>טונה</strong>
+                                        <small>100 גרם</small>
+                                        <small>בחירה חלבונית ורעננה שמתאימה לקערה קלילה</small>
+                                    </span>
+                                </label>
+
+                                <label class="option-card">
+                                    <input id="proteinChicken" type="radio" name="protein" value="חזה עוף" onclick="chooseProtein(2)" disabled="disabled"/>
+                                    <span>
+                                        <strong>חזה עוף</strong>
+                                        <small>120 גרם</small>
+                                        <small>בחירה משביעה שמתאימה לארוחת צהריים מאוזנת</small>
+                                    </span>
+                                </label>
+
+                                <label class="option-card">
+                                    <input id="proteinTofu" type="radio" name="protein" value="טופו" onclick="chooseProtein(3)" disabled="disabled" />
+                                    <span>
+                                        <strong>טופו</strong>
+                                        <small>100 גרם</small>
+                                        <small>בחירה צמחונית, קלילה ומאוזנת</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="poke-fieldset toppings-fieldset">
+                            <legend>שלב 3 - תוספות ורטבים</legend>
+                            <div class="checkbox-grid toppings-checkboxes">
+                                <label><input id="topCucumber" type="checkbox" name="toppings" value="מלפפון" onchange="chooseTopping(0)" /> מלפפון<br /><span>40 גרם</span></label>
+                                <label><input id="topAvocado" type="checkbox" name="toppings" value="אבוקדו" onchange="chooseTopping(1)"/> אבוקדו<br /><span>50 גרם</span></label>
+                                <label><input id="topEdamame" type="checkbox" name="toppings" value="אדממה" onchange="chooseTopping(2)"/> אדממה<br /><span>50 גרם</span></label>
+                                <label><input id="topCarrot" type="checkbox" name="toppings" value="גזר" onchange="chooseTopping(3)"/> גזר<br /><span>35 גרם</span></label>
+                                <label><input id="topGreenOnion" type="checkbox" name="toppings" value="בצל ירוק" onchange="chooseTopping(4)"/> בצל ירוק<br /><span>15 גרם</span></label>
+                                <label><input id="topPurpleCabbage" type="checkbox" name="toppings" value="כרוב סגול" onchange="chooseTopping(5)" /> כרוב סגול<br /><span>35 גרם</span></label>
+                                <label><input id="topCorn" type="checkbox" name="toppings" value="תירס" onchange="chooseTopping(6)" /> תירס<br /><span>40 גרם</span></label>
+                                <label><input id="topRadish" type="checkbox" name="toppings" value="צנונית" onchange="chooseTopping(7)" /> צנונית<br /><span>25 גרם</span></label>
+                                <label><input id="topMango" type="checkbox" name="toppings" value="מנגו" onchange="chooseTopping(8)" /> מנגו<br /><span>35 גרם</span></label>
+                                <label><input id="topWakame" type="checkbox" name="toppings" value="אצות וואקמה" onchange="chooseTopping(9)"/> אצות וואקמה<br /><span>45 גרם</span></label>
+                                <label><input id="sauceSoy" type="checkbox" name="toppings" value="רוטב סויה" onchange="chooseTopping(10)"/> רוטב סויה<br /><span>15 גרם</span></label>
+                                <label><input id="sauceTeriyaki" type="checkbox" name="toppings" value="רוטב טריאקי" onchange="chooseTopping(11)"/> רוטב טריאקי<br /><span>20 גרם</span></label>
+                                <label><input id="sauceSpicyMayo" type="checkbox" name="toppings" value="רוטב ספייסי מיונז" onchange="chooseTopping(12)"/> רוטב ספייסי מיונז<br /><span>20 גרם</span></label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="builder-preview-area">
+                        <div class="bowl-card" aria-label="תצוגת הקערה שלך">
+                        <h2>הקערה שלך</h2>
+                        <img id="bowlImage" class="bowl-main-image" src="images/poke/empty-bowl.png" alt="קערה ריקה להרכבת פוקי" />
+                        </div>
+                        <section class="selected-toppings" aria-labelledby="selected-toppings-title">
+                            <h2 id="selected-toppings-title">התוספות והרטבים שבחרת</h2>
+                            <div class="ingredient-gallery">
+                                <figure>
+                                    <img id="imgCucumber" class="topping-image" src="images/poke/cucumber.png" alt="מלפפון" />
+                                    <figcaption>מלפפון</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgAvocado" class="topping-image" src="images/poke/avocado.png" alt="אבוקדו" />
+                                    <figcaption>אבוקדו</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgEdamame" class="topping-image" src="images/poke/edamame.png" alt="אדממה" />
+                                    <figcaption>אדממה</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgCarrot" class="topping-image" src="images/poke/carrot.png" alt="גזר" />
+                                    <figcaption>גזר</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgGreenOnion" class="topping-image" src="images/poke/greenOnion.png" alt="בצל ירוק" />
+                                    <figcaption>בצל ירוק</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgCabbage" class="topping-image" src="images/poke/cabbage.png" alt="כרוב סגול" />
+                                    <figcaption>כרוב סגול</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgCorn" class="topping-image" src="images/poke/corn.png" alt="תירס" />
+                                    <figcaption>תירס</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgRadish" class="topping-image" src="images/poke/radish.png" alt="צנונית" />
+                                    <figcaption>צנונית</figcaption>
+                                </figure>
+
+                                <figure>
+                                    <img id="imgMango" class="topping-image" src="images/poke/mango.png" alt="מנגו" />
+                                    <figcaption>מנגו</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgWakame" class="topping-image" src="images/poke/Wakame.png" alt="אצות וואקמה" />
+                                    <figcaption>אצות וואקמה</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgSoy" class="topping-image" src="images/poke/soya.png" alt="רוטב סויה" />
+                                    <figcaption>רוטב סויה</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgTeriyaki" class="topping-image" src="images/poke/Teriyaki.png" alt="רוטב טריאקי" />
+                                    <figcaption>רוטב טריאקי</figcaption>
+                                </figure>
+                                <figure>
+                                    <img id="imgMayo" class="topping-image" src="images/poke/SpicyMayonnaise.png" alt="רוטב ספייסי מיונז" />
+                                    <figcaption>ספייסי מיונז</figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                
+                
+                <input id="confirmBowlBtn" class="confirm-bowl-button" type="button" value="הקערה שלי מוכנה!" disabled="disabled" onclick="showResults()"/>
+                
+                
+                <div id="bowlResult" class="bowl-result" aria-live="polite"></div>
+                <section class="nutrition-summary" id="nutrition-summary" aria-labelledby="nutrition-summary-title">
+                    <h2 id="nutrition-summary-title">הערכים התזונתיים המשוערים שלה:</h2>
+                    <ul>
+                        <li><strong>קלוריות:</strong> <span id="caloriesValue">520</span> קק״ל</li>
+                        <li><strong>חלבון:</strong> <span id="proteinValue">35</span> גרם</li>
+                        <li><strong>פחמימות:</strong> <span id="carbsValue">52</span> גרם</li>
+                        <li><strong>שומנים:</strong> <span id="fatValue">18</span> גרם</li>
+                        <li><strong>סיבים תזונתיים:</strong> <span id="fiberValue">9</span> גרם</li>
+                    </ul>
+                </section>
+            </form>
+        </section>
+
+        <aside class="tip-box poke-tip-box" aria-labelledby="bowl-tips-title">
+            <img src="images/poke/tipIcon.png" alt="איור נורה לקופסת טיפים" />
+            <div>
+                <h2 id="bowl-tips-title">טיפים לקערה מאוזנת</h2>
+                <ul>
+                    <li>שלבו מקור חלבון איכותי בכל ארוחה</li>
+                    <li>העדיפו פחמימות מלאות על פני מעובדות</li>
+                    <li>הוסיפו מגוון ירקות צבעוניים לקבלת סיבים, ויטמינים ומינרלים</li>
+                    <li>שומנים טובים כמו אבוקדו, אגוזים ושמן זית תורמים לתחושת שובע</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <a href="contactUs.html">צרו קשר</a>
+        <span>|</span>
+        <a href="siteMap.html">מפת האתר</a>
+    </footer>
+</div>
+</body>
+</html>

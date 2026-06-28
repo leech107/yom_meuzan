@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>יום מאוזן | צרו קשר</title>
+    <meta name="description" content="אתר יום מאוזן מציג הרגלים קטנים לחיים מאוזנים בתחומי שינה, תזונה ותנועה." />
+    <meta name="keywords" content="יום מאוזן, הרגלים, שינה, תזונה מאוזנת, תנועה, אורח חיים בריא" />
+    <meta name="author" content="לי צ'סטבן ושני בן-עמי" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="icon" href="images/siteLogo.png" type="image/png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+
+<body class="content-page contact-page">
+<div id="container">
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="מעבר לדף הבית">
+            <span class="logo-text">יום מאוזן</span>
+            <img src="images/siteLogo.png" alt="סמל עלה של יום מאוזן" />
+        </a>
+        <nav class="main-nav" aria-label="ניווט ראשי באתר">
+            <ul class="main-menu">
+                <li><a href="index.html">עמוד הבית</a></li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >שינה <span class="menu-arrow">▽</span></a>                    
+                    <ul id="sleepMenu" class="sub-menu">
+                        <li><a href="sleepImportance.html">למה זה חשוב</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">טיפים</a></li>
+                        <li><a href="sleepMyth.html">מיתוסים</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >תזונה מאוזנת <span class="menu-arrow">▽</span></a>
+                    <ul id="nutritionMenu" class="sub-menu">
+                        <li><a class="disabled-link" href="#" onclick="return false;">שגרת תזונה</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">שתיה במהלך היום</a></li>
+                        <li><a href="buildPokeBowl.html">בנו קערה מאוזנת לצהריים</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent" href="#" >שגרת יום-יום <span class="menu-arrow">▽</span></a>
+                    <ul id="routineMenu" class="sub-menu">
+                        <li><a class="disabled-link" href="#" onclick="return false;">שגרה מאוזנת</a></li>
+                        <li><a href="movement.html">תנועה ואימון</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">ניהול זמן</a></li>
+                        <li><a class="disabled-link" href="#" onclick="return false;">מנוחה ורגיעה</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a class="nav-parent active" href="#" >אודות ויצירת קשר <span class="menu-arrow">▽</span></a>
+                    <ul id="aboutMenu" class="sub-menu">
+                        <li><a href="about.html">על האתר ועלינו</a></li>
+                        <li><a href="contactUs.html">צרו קשר</a></li>
+                        <li><a href="siteMap.html">מפת אתר</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<nav class="breadcrumbs" aria-label="פירורי לחם"><a href="index.html">עמוד הבית</a> <span aria-hidden="true">&gt;</span> <a href="#">אודות ויצירת קשר</a> <span aria-hidden="true">&gt;</span> <span>צרו קשר</span></nav>
+<main>
+        <section class="contact-content" aria-labelledby="contact-title">
+            <div class="contact-copy">
+                <h1 id="contact-title">צרו קשר</h1>
+                <p>יש לכם שאלה, רעיון או פידבק על האתר? כתבו לנו ונשמח לחזור אליכם.</p>
+                <img src="images/contactUS.png" alt="איור רגוע של שליחת הודעה" />
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <fieldset>
+                    <legend>פרטים ליצירת קשר</legend>
+                    <label for="fullName">שם מלא <span class="required-star">*</span></label>
+                    <input id="fullName" name="fullName" type="text" placeholder="הקלידו שם מלא" required />
+
+                    <label for="email">כתובת מייל <span class="required-star">*</span></label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required />
+
+                    <label for="age">גיל</label>
+                    <input id="age" name="age" type="number" min="12" max="120" placeholder="לדוגמה: 25" />
+
+                    <label for="topic">נושא הפנייה <span class="required-star">*</span></label>
+                    <select id="topic" name="topic" required>
+                        <option value="">בחרו נושא</option>
+                        <option value="sleep">שינה</option>
+                        <option value="nutrition">תזונה מאוזנת</option>
+                        <option value="routine">שגרת יום-יום</option>
+                        <option value="other">אחר</option>
+                    </select>
+
+                    <p class="form-label">איך תרצו שנחזור אליכם?</p>
+                    <div class="inline-options">
+                        <label><input type="radio" name="replyBy" value="mail" /> מייל</label>
+                        <label><input type="radio" name="replyBy" value="phone" /> טלפון</label>
+                    </div>
+
+                    <label for="message">תוכן הפנייה <span class="required-star">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="כתבו כאן את ההודעה שלכם" required></textarea>
+                    <label class="checkbox-line"><input type="checkbox" name="updates" value="yes" /> אשמח לקבל עדכונים וטיפים מהאתר</label>
+                    <input class="submit-button" type="submit" value="שליחה" />
+                </fieldset>
+            </form>
+        </section>
+</main>
+    <footer class="site-footer">
+        <a href="contactUs.html">צרו קשר</a>
+        <span>|</span>
+        <a href="siteMap.html">מפת האתר</a>
+    </footer>
+</div>
+</body>
+</html>
