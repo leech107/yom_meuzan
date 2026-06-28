@@ -1,4 +1,4 @@
-﻿// תפריט ניווט
+// תפריט ניווט
 window.addEventListener("load", function () {
     const disabledLinks = document.getElementsByClassName("disabled-link");
     for (let i = 0; i < disabledLinks.length; i++) {
@@ -34,7 +34,6 @@ const toppingsCarbs =[1.5,4,5,3.5,1.1,2.5,8,0.8,5.3,3,1,8,1];
 const toppingsFat =[0.1,7.5,2.5,0.1,0,0.1,0.5,0,0.1,0.2,0,0,15];
 const toppingsFiber =[0.2,3.5,2.5,1,0.4,0.9,1,0.4,0.6,1.5,0,0,0];
 const toppingsNamesHeb = ["מלפפון","אבוקדו","אדממה","גזר","בצל ירוק","כרוב סגול","תירס","צנונית","מנגו","אצות וואקמה","רוטב סויה","רוטב טריאקי","רוטב ספייסי מיונז"];
-
 
 let chosenBase = -1;
 let chosenProtein = -1;
@@ -164,21 +163,14 @@ function showResults() {
 }
 
 
-
 function updateNutrition() {
 
-    let totalCalories = baseCalories[chosenBase];
-    let totalProtein = baseProtein[chosenBase];
-    let totalCarbs = baseCarbs[chosenBase];
-    let totalFats = baseFats[chosenBase];
-    let totalFiber = baseFibers[chosenBase];
-
-    totalCalories = totalCalories + proteinCalories[chosenProtein];
-    totalProtein = totalProtein + proteinProtein[chosenProtein];
-    totalCarbs = totalCarbs + proteinCarbs[chosenProtein];
-    totalFats = totalFats + proteinFat[chosenProtein];
-    totalFiber = totalFiber + proteinFiber[chosenProtein];
-
+    let totalCalories = baseCalories[chosenBase] + proteinCalories[chosenProtein];
+    let totalProtein = baseProtein[chosenBase] + proteinProtein[chosenProtein];
+    let totalCarbs = baseCarbs[chosenBase] + proteinCarbs[chosenProtein];
+    let totalFats = baseFats[chosenBase] + proteinFat[chosenProtein];
+    let totalFiber = baseFibers[chosenBase] + proteinFiber[chosenProtein];
+    
     for (let i = 0; i < toppingsID.length; i++) {
         if (document.getElementById(toppingsID[i]).checked == true) {
             totalCalories = totalCalories + toppingsCalories[i];
