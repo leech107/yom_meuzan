@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="icon" href="images/siteLogo.png" type="image/png" />
     <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <link href="styles/reset.css" rel="stylesheet" />
     <link href="styles/myStyle.css" rel="stylesheet" />
 
@@ -20,11 +19,11 @@
 <body class="home-page">
 <div id="container">
     <header class="site-header">
-        <a class="logo" href="index.html" aria-label="מעבר לדף הבית">
+        <a class="logo" href="index.html" >
             <span class="logo-text">יום מאוזן</span>
             <img src="images/siteLogo.png" alt="סמל עלה של יום מאוזן" />
         </a>
-        <nav class="main-nav" aria-label="ניווט ראשי באתר">
+        <nav class="main-nav" >
             <ul class="main-menu">
                 <li><a class="active" href="index.html">עמוד הבית</a></li>
 
@@ -32,7 +31,7 @@
                     <a class="nav-parent" href="#" >שינה <span class="menu-arrow">▽</span></a>
                     <ul id="sleepMenu" class="sub-menu">
                         <li><a href="sleepImportance.html">למה זה חשוב</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">טיפים</a></li>
+                        <li><a class="disabled-link" href="#" >טיפים</a></li>
                         <li><a href="sleepMyth.html">מיתוסים</a></li>
                     </ul>
                 </li>
@@ -40,8 +39,8 @@
                 <li class="has-submenu">
                     <a class="nav-parent" href="#" >תזונה מאוזנת <span class="menu-arrow">▽</span></a>
                     <ul id="nutritionMenu" class="sub-menu">
-                        <li><a class="disabled-link" href="#" onclick="return false;">שגרת תזונה</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">שתיה במהלך היום</a></li>
+                        <li><a class="disabled-link" href="#" >שגרת תזונה</a></li>
+                        <li><a class="disabled-link" href="#" >שתייה במהלך היום</a></li>
                         <li><a href="buildPokeBowl.html">בנו קערה מאוזנת לצהריים</a></li>
                     </ul>
                 </li>
@@ -49,10 +48,10 @@
                 <li class="has-submenu">
                     <a class="nav-parent" href="#" >שגרת יום-יום <span class="menu-arrow">▽</span></a>
                     <ul id="routineMenu" class="sub-menu">
-                        <li><a class="disabled-link" href="#" onclick="return false;">שגרה מאוזנת</a></li>
+                        <li><a class="disabled-link" href="#" >שגרה מאוזנת</a></li>
                         <li><a href="movement.html">תנועה ואימון</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">ניהול זמן</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">מנוחה ורגיעה</a></li>
+                        <li><a class="disabled-link" href="#" >ניהול זמן</a></li>
+                        <li><a class="disabled-link" href="#" >מנוחה ורגיעה</a></li>
                     </ul>
                 </li>
 
@@ -68,7 +67,7 @@
         </nav>
     </header>
 <main>
-        <section class="home-hero" aria-labelledby="home-title">
+        <section class="home-hero" >
             <div class="home-hero-content watercolor-card">
                 <h1 id="home-title">הרגלים קטנים<br />לחיים מאוזנים</h1>
                 <p>גלו איך שינה איכותית, תזונה מאוזנת, תנועה ושגרה נכונה משתלבים יחד לאורח חיים בריא ונעים יותר</p>
@@ -78,15 +77,16 @@
         </div>
         </section>
 
-        <section class="home-shortcuts" aria-label="קישורים מרכזיים באתר">
-            <article class="shortcut-card">
-                <a class="soft-button" href="buildPokeBowl.html">להרכיב קערת פוקי מזינה</a>
-                <img src="images/homePage/homePoke.png" alt="קערת פוקי עם ירקות ודג" />
-            </article>
+        <section class="home-shortcuts" >
             <article class="shortcut-card">
                 <a class="soft-button" href="sleepImportance.html">לישון</a>
                 <img src="images/homePage/homeSleep.png" alt="מסכת שינה, ירח וכוכבים" />
             </article>
+            <article class="shortcut-card">
+                <a class="soft-button" href="buildPokeBowl.html">להרכיב קערת פוקי מזינה</a>
+                <img src="images/homePage/homePoke.png" alt="קערת פוקי עם ירקות ודג" />
+            </article>
+
             <article class="shortcut-card">
                 <a class="soft-button" href="movement.html">לזוז</a>
                 <img src="images/homePage/homeRoutine.png" alt="מזרן אימון, בקבוק מים ומשקולות" />
