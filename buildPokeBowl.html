@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="icon" href="images/siteLogo.png" type="image/png" />
     <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <link href="styles/reset.css" rel="stylesheet" />
     <link href="styles/myStyle.css" rel="stylesheet" />
 
@@ -20,11 +19,11 @@
 <body class="content-page poke-page">
 <div id="container">
     <header class="site-header">
-        <a class="logo" href="index.html" aria-label="מעבר לדף הבית">
+        <a class="logo" href="index.html" >
             <span class="logo-text">יום מאוזן</span>
             <img src="images/siteLogo.png" alt="סמל עלה של יום מאוזן" />
         </a>
-        <nav class="main-nav" aria-label="ניווט ראשי באתר">
+        <nav class="main-nav" >
             <ul class="main-menu">
                 <li><a href="index.html">עמוד הבית</a></li>
 
@@ -32,7 +31,7 @@
                     <a class="nav-parent" href="#">שינה <span class="menu-arrow">▽</span></a>                    
                     <ul id="sleepMenu" class="sub-menu">
                         <li><a href="sleepImportance.html">למה זה חשוב</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">טיפים</a></li>
+                        <li><a class="disabled-link" href="#">טיפים</a></li>
                         <li><a href="sleepMyth.html">מיתוסים</a></li>
                     </ul>
                 </li>
@@ -40,8 +39,8 @@
                 <li class="has-submenu">
                     <a class="nav-parent active" href="#" >תזונה מאוזנת <span class="menu-arrow">▽</span></a>
                     <ul id="nutritionMenu" class="sub-menu">
-                        <li><a class="disabled-link" href="#" onclick="return false;">שגרת תזונה</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">שתיה במהלך היום</a></li>
+                        <li><a class="disabled-link" href="#" >שגרת תזונה</a></li>
+                        <li><a class="disabled-link" href="#" >שתייה במהלך היום</a></li>
                         <li><a href="buildPokeBowl.html">בנו קערה מאוזנת לצהריים</a></li>
                     </ul>
                 </li>
@@ -49,10 +48,10 @@
                 <li class="has-submenu">
                     <a class="nav-parent" href="#" >שגרת יום-יום <span class="menu-arrow">▽</span></a>
                     <ul id="routineMenu" class="sub-menu">
-                        <li><a class="disabled-link" href="#" onclick="return false;">שגרה מאוזנת</a></li>
+                        <li><a class="disabled-link" href="#" >שגרה מאוזנת</a></li>
                         <li><a href="movement.html">תנועה ואימון</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">ניהול זמן</a></li>
-                        <li><a class="disabled-link" href="#" onclick="return false;">מנוחה ורגיעה</a></li>
+                        <li><a class="disabled-link" href="#" >ניהול זמן</a></li>
+                        <li><a class="disabled-link" href="#" >מנוחה ורגיעה</a></li>
                     </ul>
                 </li>
 
@@ -69,14 +68,14 @@
     </header>
 <nav class="breadcrumbs" aria-label="פירורי לחם"><a href="index.html">עמוד הבית</a> <span aria-hidden="true">&gt;</span> <a href="#">תזונה מאוזנת</a> <span aria-hidden="true">&gt;</span> <span>בנו קערה מאוזנת לצהריים</span></nav>
     <main>
-        <section class="page-intro poke-intro" aria-labelledby="poke-title">
+        <section class="page-intro poke-intro" >
             <h1 id="poke-title">בנו קערה מאוזנת לארוחת צהריים</h1>
             <p>ארוחת הצהריים מספקת לגוף את האנרגיה הדרושה להמשך הפעילות, הלמידה והריכוז.</p>
             <p>כאשר הארוחה משלבת מקור לחלבון, פחמימות איכותיות, ירקות מגוונים ושומנים טובים, היא מסייעת לשמור על תחושת שובע לאורך זמן ותורמת לתפקוד מיטבי של הגוף והמוח.</p>
             <p>לפניכם טופס בו תוכלו לבחור את המרכיבים השונים להרכבת קערת הצהריים שלכם ולקבל מידע אודות הערכים התזונתיים שלה.</p>
         </section>
 
-        <section class="poke-form-card" aria-labelledby="builder-title">
+        <section class="poke-form-card" >
             <form id="pokeForm" class="poke-form" action="#" method="get">
                 <div class="bowl-name-area">
                     <label for="bowlName">איך קוראים לך?</label>
@@ -178,11 +177,11 @@
                         </fieldset>
                     </div>
                     <div class="builder-preview-area">
-                        <div class="bowl-card" aria-label="תצוגת הקערה שלך">
+                        <div class="bowl-card" >
                         <h2>הקערה שלך</h2>
                         <img id="bowlImage" class="bowl-main-image" src="images/poke/empty-bowl.png" alt="קערה ריקה להרכבת פוקי" />
                         </div>
-                        <section class="selected-toppings" aria-labelledby="selected-toppings-title">
+                        <section class="selected-toppings" >
                             <h2 id="selected-toppings-title">התוספות והרטבים שבחרת</h2>
                             <div class="ingredient-gallery">
                                 <figure>
@@ -247,8 +246,8 @@
                 <input id="confirmBowlBtn" class="confirm-bowl-button" type="button" value="הקערה שלי מוכנה!" disabled="disabled" onclick="showResults()"/>
                 
                 
-                <div id="bowlResult" class="bowl-result" aria-live="polite"></div>
-                <section class="nutrition-summary" id="nutrition-summary" aria-labelledby="nutrition-summary-title">
+                <div id="bowlResult" class="bowl-result" ></div>
+                <section class="nutrition-summary" id="nutrition-summary" >
                     <h2 id="nutrition-summary-title">הערכים התזונתיים המשוערים שלה:</h2>
                     <ul>
                         <li><strong>קלוריות:</strong> <span id="caloriesValue">520</span> קק״ל</li>
@@ -261,7 +260,7 @@
             </form>
         </section>
 
-        <aside class="tip-box poke-tip-box" aria-labelledby="bowl-tips-title">
+        <aside class="tip-box poke-tip-box" >
             <img src="images/poke/tipIcon.png" alt="איור נורה לקופסת טיפים" />
             <div>
                 <h2 id="bowl-tips-title">טיפים לקערה מאוזנת</h2>
